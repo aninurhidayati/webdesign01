@@ -11,6 +11,12 @@ h4 {
 .menu {
   color: rgb(225, 70, 19);
   font-size: 20px;
+  background-color: rgb(0, 255, 213);
+  margin-left: 10px;
+  font-style: normal;
+}
+.menu a {
+  text-decoration: none;
 }
 ul li {
   color: darkorchid;
@@ -34,4 +40,7 @@ button {
   padding: 5px;
   border: 1px gray groove;
   border-radius: 5px;
+}
+#menukiri {
+  border: 1px dotted red;
 }
