@@ -5,18 +5,27 @@
 body {
   background-color: rgb(197, 235, 235);
 }
-h4 {
+header {
+  background-image: url("../img/header.jpg");
+  height: 150px;
+}
+h2 {
   color: red;
+  text-align: center;
 }
 .menu {
   color: rgb(225, 70, 19);
   font-size: 20px;
-  background-color: rgb(0, 255, 213);
+  /* background-color: rgb(0, 255, 213); */
   margin-left: 10px;
   font-style: normal;
 }
 .menu a {
   text-decoration: none;
+  text-align: center;
+}
+nav {
+  margin: 20px auto;
 }
 ul li {
   color: darkorchid;
