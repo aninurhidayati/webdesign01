@@ -13,7 +13,12 @@ body {
 header {
   /* background-image: url("../img/header.jpg"); */
   background-color: rgb(8, 8, 136);
-  /* height: 150px; */
+  height: 230px;
+}
+header img {
+  opacity: 0.5;
+  filter: blur(2px);
+  position: absolute;
 }
 
 .menu {
@@ -28,7 +33,7 @@ header {
   text-align: center;
 }
 nav {
-  margin: 0px 10px;
+  margin: 0px 1px;
   color: white;
 }
 nav a {
@@ -39,6 +44,9 @@ nav a {
 }
 nav a:hover {
   background-color: rgb(98, 202, 243);
+  padding: 15px 10px 15px 10px;
+  font-size: 20px;
+  color: red;
 }
 nav a:active,
 nav a:visited {
@@ -47,11 +55,12 @@ nav a:visited {
 
 .judul {
   color: rgb(245, 241, 17);
-  position: absolute;
+  position: relative;
   text-align: center !important;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: 900;
   font-size: 50px;
+  filter: none;
 }
 ul li {
   color: rgb(19, 8, 121);
@@ -72,14 +81,15 @@ button {
   /* border: 1px dotted red; */
   float: left;
   padding: 10px 20px 10px 20px;
-  position: relative;
+  /* position: relative; */
 }
 
 #konten {
   padding: 10px 20px 20px 20px;
+  position: relative;
 }
 p::first-line {
-  color: rgb(16, 37, 231);
+  color: rgb(175, 240, 25);
 }
 #portofolio {
   padding: 20px 40px 20px 40px;
@@ -98,4 +108,39 @@ footer {
   background-color: rgb(13, 13, 102);
   color: white;
   bottom: 0;
+}
+.title {
+  font-weight: bold;
+}
+/* css flexbox */
+.container {
+  width: 800px;
+  height: auto;
+  border: 1px solid red;
+  margin: 20px auto; /*auto ditengah*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  /* padding: 5px; */
+  margin: 5px;
+  border: 2px solid rgb(17, 14, 223);
+  border-radius: 10px;
+}
+.box img {
+  height: 200px;
+  width: 200px;
+}
+.order1 {
+  order: 1;
+}
+.order2 {
+  order: 2;
+}
+.grow2 {
+  flex-grow: 2;
 }
